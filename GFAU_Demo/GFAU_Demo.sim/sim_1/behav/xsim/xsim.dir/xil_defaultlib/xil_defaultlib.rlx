@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sim_1/new/tb_3.v,1575920681,verilog,,,,LFSR3_tb,,,,,,,,
+C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GF3.v,1573403951,verilog,,C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v,,LFSR3,,,,,,,,
+C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v,1575967311,verilog,,C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sim_1/new/tb_3.v,,GFAU_Gen;GFAU_Top,,,,,,,,

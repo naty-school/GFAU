@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GF3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GFAU_Top
+INFO: [VRFC 10-311] analyzing module GFAU_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sim_1/new/tb_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR3_tb

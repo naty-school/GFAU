@@ -1,0 +1,400 @@
+
+*** Running vivado
+    with args -log GFAU_Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GFAU_Top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source GFAU_Top.tcl -notrace
+Command: synth_design -top GFAU_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9676 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 364.750 ; gain = 100.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'GFAU_Top' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Filter' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/Downloads/filter.v:7]
+	Parameter wd bound to: 16 - type: integer 
+	Parameter n bound to: 65535 - type: integer 
+	Parameter bound bound to: 64000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Filter' (1#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/Downloads/filter.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Debouncer' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:122]
+INFO: [Synth 8-6157] synthesizing module 'dff_resetless' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'dff_resetless' (2#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'Debouncer' (3#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:122]
+INFO: [Synth 8-6157] synthesizing module 'GFAU_Gen' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v:78]
+INFO: [Synth 8-6157] synthesizing module 'LFSR3' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GF3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR3' (4#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GF3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GFAU_Gen' (5#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v:78]
+INFO: [Synth 8-6157] synthesizing module 'SSD_Ctrl' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clkDivider' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'clkDivider' (6#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:81]
+INFO: [Synth 8-226] default block is never used [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'SSD_Ctrl' (7#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'GFAU_Top' (8#1) [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v:3]
+WARNING: [Synth 8-3331] design LFSR3 has unconnected port poly[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 420.637 ; gain = 156.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 420.637 ; gain = 156.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 420.637 ; gain = 156.750
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/constrs_1/new/gfau3.xdc]
+Finished Parsing XDC File [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/constrs_1/new/gfau3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/constrs_1/new/gfau3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GFAU_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GFAU_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 772.063 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 772.063 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 772.063 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 772.063 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "primitives_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "primitives_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[6]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "log_reg[7]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/new/GFAU_Top.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      3 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 19    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module GFAU_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      3 Bit         XORs := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module Filter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module dff_resetless 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module LFSR3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module GFAU_Gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 18    
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+Module clkDivider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SSD_Ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'dU/r1/q_reg' into 'bU/holder_reg' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:138]
+INFO: [Synth 8-4471] merging register 'dC/r1/q_reg' into 'bC/holder_reg' [C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.srcs/sources_1/imports/new/ext_modules.v:138]
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "G3/primitives_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design GFAU_Top has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design GFAU_Top has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design GFAU_Top has port AN[2] driven by constant 1
+WARNING: [Synth 8-3917] design GFAU_Top has port AN[1] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.063 ; gain = 508.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 792.102 ; gain = 528.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    27|
+|3     |LUT1   |    20|
+|4     |LUT2   |    47|
+|5     |LUT3   |    18|
+|6     |LUT4   |    24|
+|7     |LUT5   |     6|
+|8     |LUT6   |   145|
+|9     |MUXF7  |     6|
+|10    |FDRE   |    93|
+|11    |FDSE   |     5|
+|12    |LD     |     3|
+|13    |IBUF   |    15|
+|14    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+-----------+------+
+|      |Instance   |Module     |Cells |
++------+-----------+-----------+------+
+|1     |top        |           |   425|
+|2     |  G3       |GFAU_Gen   |   266|
+|3     |    GF8    |LFSR3      |     7|
+|4     |  bC       |Filter     |    77|
+|5     |  ssd1     |SSD_Ctrl   |    46|
+|6     |    CD1kHz |clkDivider |    28|
++------+-----------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 799.348 ; gain = 535.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 799.348 ; gain = 184.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 799.348 ; gain = 535.461
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 799.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 799.348 ; gain = 545.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 799.348 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/natha/Desktop/cmpe415/GFAU_Demo/GFAU_Demo.runs/synth_1/GFAU_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file GFAU_Top_utilization_synth.rpt -pb GFAU_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 15:41:36 2019...
